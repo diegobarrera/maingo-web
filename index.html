@@ -34,19 +34,21 @@
           <a class="js-scroll-trigger" href="#page-top">Menú</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Home</a>
+          <a class="js-scroll-trigger" href="#page-top">Inicio</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#what">About</a>
+          <a class="js-scroll-trigger" href="#about">Acerca</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Services</a>
+          <a class="js-scroll-trigger" href="#services">Servicios</a>
         </li>
+          <!--
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
+        -->
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contact">Contact</a>
+          <a class="js-scroll-trigger" href="#contact">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -58,38 +60,34 @@
         <h3 class="mb-5">
           <em>Creamos tus páginas web y aplicaciones móviles</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#what">Conoce más</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Conoce más</a>
       </div>
       <div class="overlay"></div>
     </header>
 
-    <!-- What -->
-    <section class="content-section bg-light" id="what">
-      <div class="container text-justify">
-        <div class="row">
-          <div class="col-6 mx-auto ">
-            <h2>¿Qué hacemos?</h2>
-            <p class="lead mb-5">
-              Diseñamos y construimos de forma ágil y profesional, aplicaciones web y móviles a la medida, no solo con la calidad y capacidad para llegar a cientos de miles de personas, sino con el diseño para convertir conceptos en experiencias y la inteligencia para convertir ideas en negocios.
-            </p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- About -->
-    <section class="content-section bg-light" id="about">
+    <section class="content-section" id="about">
       <div class="container text-center">
+          <div class="content-section-heading">
+              <h3 class="text-secondary mb-0">Acerca</h3>
+              <h2 class="mb-5">Nuestros servicios</h2>
+          </div>
         <div class="row">
           <div class="col-lg-3 mx-auto">
+              <img class="img-fluid" src="./img/phone.jpg" alt="">
+              <br>
+              <br>
           </div>
           <div class="col-lg-9 mx-auto text-justify">
-            <h2>¿Quiénes somos?</h2>
+              <h2>¿Qué hacemos?</h2>
+              <p class="lead mb-5">
+                  Diseñamos y construimos de forma ágil y profesional, aplicaciones web y móviles a la medida, no solo con la calidad y capacidad para llegar a cientos de miles de personas, sino con el diseño para convertir conceptos en experiencias y la inteligencia para convertir ideas en negocios.
+              </p>
+              <h2>¿Quiénes somos?</h2>
             <p class="lead mb-5">
               Somos un grupo de jóvenes diseñadores,ingenieros y estadísticos profesionales con gran experiencia desarrollando productos digitales en diferentes sectores como transporte, finanzas y comercio electrónico para Colombia y otros países de Latinoamérica.
             </p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+            <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
           </div>
         </div>
       </div>
@@ -154,18 +152,18 @@
         </div>
         <div class="row">
           <div class="col-6 mx-auto ">
-            <form>
+            <form action="mail.php" method="POST">
               <div class="form-row">
                 <div class="col">
-                  <input class="form-control mb-3" type="text" placeholder="Nombre completo" required>
+                  <input name="name" class="form-control mb-3" type="text" placeholder="Nombre completo" required>
                 </div>
                 <div class="col">
-                  <input class="form-control mb-3 ml-sm-1" type="email" placeholder="Correo electrónico" required>
+                  <input name="email" class="form-control mb-3 ml-sm-1" type="email" placeholder="Correo electrónico" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col">
-                  <textarea class="form-control mb-3" placeholder="Commentario..." name="msg" required></textarea>
+                  <textarea name="message" class="form-control mb-3" placeholder="Commentario " name="msg" required></textarea>
                 </div>
               </div>
               <button class="btn btn-primary btn-xl js-scroll-trigger">Enviar</button>
@@ -176,15 +174,16 @@
     </section>
 
     <!-- Callout -->
-    <section class="callout">
-      <div class="container text-center">
-        <h2 class="mx-auto mb-5">Welcome to
-          <em>your</em>
-          next website!</h2>
-        <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
-      </div>
-    </section>
-
+    <!--
+     <section class="callout">
+       <div class="container text-center">
+         <h2 class="mx-auto mb-5">Welcome to
+           <em>your</em>
+           next website!</h2>
+         <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
+       </div>
+     </section>
+     -->
     <!-- Portfolio -->
     <!-- <section class="content-section" id="portfolio">
       <div class="container">
@@ -242,17 +241,19 @@
     </section> -->
 
     <!-- Call to Action -->
-    <section class="content-section bg-primary text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-      </div>
-    </section>
+    <!--<section class="content-section bg-primary text-white">
+     <div class="container text-center">
+       <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+       <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+       <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+     </div>
+   </section>
+   -->
 
-    <!-- Footer -->
-    <footer class="footer text-center">
+   <!-- Footer -->
+    <footer class="footer text-center ">
       <div class="container">
+          <!--
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
             <a class="social-link rounded-circle text-white mr-3" href="#">
@@ -270,6 +271,7 @@
             </a>
           </li>
         </ul>
+        -->
         <p class="text-muted small mb-0">Copyright &copy; Your Website 2018</p>
       </div>
     </footer>
